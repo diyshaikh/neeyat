@@ -14,6 +14,7 @@
         Neeyat
     </div>
     <div id="body">
+    
       <!-- This section will be dynamically inserted from JavaScript -->
         <div class="userSection">
           <div class="messages user-message">
@@ -21,8 +22,9 @@
           <div class="seperator"></div>
         </div>
         <div class="botSection">
+        
           <div class="messages bot-reply">
-            <h3>Welcome to Neeyat ! How may I help you?</h3>
+            <h4>Welcome to Neeyat ! How may I help you?</h4>
           </div>
           <div class="seperator"></div>
         </div>        
