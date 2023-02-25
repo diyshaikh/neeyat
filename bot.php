@@ -11,7 +11,7 @@
 <div id="bot">
   <div id="container">
     <div id="header">
-        Online Chatbot App
+        Neeyat
     </div>
     <div id="body">
       <!-- This section will be dynamically inserted from JavaScript -->
@@ -22,6 +22,7 @@
         </div>
         <div class="botSection">
           <div class="messages bot-reply">
+            <h3>Welcome to Neeyat ! How may I help you?</h3>
           </div>
           <div class="seperator"></div>
         </div>        
