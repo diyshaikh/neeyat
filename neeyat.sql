@@ -235,6 +235,7 @@ CREATE TABLE `chatbot` (
 
 
 INSERT INTO `chatbot` (`id`, `messages`, `response`) VALUES
+<<<<<<< HEAD
 (1, 'Hey', 'Hello'),
 (2, 'Hi','Hello'),
 (3, 'What is your name?','My name is Muaz. i am a chat-bot. How may i help you?'),
