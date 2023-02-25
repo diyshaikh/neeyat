@@ -74,15 +74,22 @@ CREATE TABLE `chatbot` (
 
 
 INSERT INTO `chatbot` (`id`, `messages`, `response`) VALUES
-(1, 'Hey', 'Welcome to Neeyat'),
-(2, 'Hi','Welcome to Neeyat'),
-(3, 'what is your name', 1),
-(4, 'What can you do', 2),
-(7, 'what is PHP', 4),
-(8, 'What is ChatBot', 5),
-(9, 'hi', 6),
-(10, 'hello', 6),
-(11, 'yow', 6),
-(12, 'good day', 6),
-(14, 'sample', 7),
-(15, 'what topic can I ask', 8);
+(1, 'Hey', 'Hello'),
+(2, 'Hi','Hello'),
+(3, 'What is your name?','My name is Muaz. i am a chat-bot. How may i help you?'),
+(4, 'How can I contact my mentor?', 'You can register yourself and see which mentors are there for your field.'),
+(5, 'How to contact mentor?', '1st of all you have to register after that you will get the list of mentors.'),
+(6, 'How neeyat works?', ' It works on algo which makes the relation between Mentors and Mentees'),
+(7, 'Where to get books?', 'Yes you can visit our book page.'),
+(8, 'How to get books?', '1st of all you have to register yourself and after that you can add to cart the books you want'),
+(9, 'How can I donate books?', '1st you have to click on photo And upload it and put price on that.'),
+(10, 'What will be the time for interaction with mentees or mentor?', 'You can interact with them in between 9 AM to 6 PM.'),
+(11, 'Where to meet?', 'It depends on mentor and mentee online or offline'),
+(12, 'What is the procedure for registration as a mentee?', 'You have to fill a form and after that you will be redirected to the list of mentors'),
+(13, 'What is neeyat?', 'It is a website which helps underprivileged students an oppurtunity to study.'),
+(14, 'Can I learn for my JEE entrance exam also?', 'You can get Mentor for that also'),
+(15, 'Can a person older than 18 also learn through this?', 'No its just for under privileged kids'),
+(16, 'Can I donate money?', 'Yes!!! You can visit our donate page'),
+(17, 'Can I get physics by HC Verma book?', 'Yes!!! You can visit our book page');
+(18, 'Hello', 'Hi');
+
