@@ -41,6 +41,7 @@ if(isset($_POST['submit'])){
 
    <!-- custom css file link  -->
    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="style_login.css">
 
 </head>
 <body>
@@ -59,6 +60,47 @@ if(isset($message)){
    }
 }
 ?>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slide Navbar</title>
+	<link rel="stylesheet" type="text/css" href="slide navbar style.css">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="signup">
+         <form action="" method="post">					<label for="chk" aria-hidden="true"><a href="register.php"> Sign up</a></label>
+               <input type="text" name="name" placeholder="enter your name" required class="box">
+               <input type="email" name="email" placeholder="enter your email" required class="box">
+               <input type="password" name="password" placeholder="enter your password" required class="box">
+               <select name="user_type" class="box">
+                    <option value="user">user</option>
+                   <option value="admin">admin</option>
+                </select>
+					<input type="submit" name="submit" value="Register now" class="rbtn">
+               
+				</form>
+			</div>
+
+			<div class="login">
+         <form action="" method="post">
+					<label for="chk" aria-hidden="true"><a href="login.php"> Login</a></label>
+					<input type="email" name="email" placeholder="Email" required="">
+					<input type="password" name="password" placeholder="Password" required="">
+					<input type="submit" name="submit" value="login now" class="btn">
+				</form>
+			</div>
+	</div>
+</body>
+</html>
+
+<!-- 
+
    
 <div class="form-container">
 
@@ -76,7 +118,7 @@ if(isset($message)){
       <p>already have an account? <a href="login.php">login now</a></p>
    </form>
 
-</div>
+</div> -->
 
 </body>
 </html>
