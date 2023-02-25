@@ -235,7 +235,7 @@ CREATE TABLE `chatbot` (
 
 
 INSERT INTO `chatbot` (`id`, `messages`, `response`) VALUES
-
+<<<<<<< HEAD
 (1, 'Hey', 'Hello'),
 (2, 'Hi','Hello'),
 (3, 'What is your name?','My name is Muaz. i am a chat-bot. How may i help you?'),
@@ -252,7 +252,7 @@ INSERT INTO `chatbot` (`id`, `messages`, `response`) VALUES
 (14, 'Can I learn for my JEE entrance exam also?', 'You can get Mentor for that also'),
 (15, 'Can a person older than 18 also learn through this?', 'No its just for under privileged kids'),
 (16, 'Can I donate money?', 'Yes!!! You can visit our donate page'),
-(17, 'Can I get physics by HC Verma book?', 'Yes!!! You can visit our book page');
+(17, 'Can I get physics by HC Verma book?', 'Yes!!! You can visit our book page'),
 (18, 'Hello', 'Hi');
 
 
