@@ -54,3 +54,21 @@ CREATE TABLE `mentee` (
   `email` varchar(12) NOT NULL,
   `aoi` varchar(500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
+
+CREATE TABLE `contact` (
+  `name` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `message` varchar(100) NOT NULL,
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
+CREATE TABLE `chatbot` (
+  `id` varchar(100) NOT NULL,
+  `messages` varchar(1000) NOT NULL,
+  `response` varchar(1000) NOT NULL,
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
