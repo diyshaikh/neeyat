@@ -44,6 +44,9 @@ if(isset($_POST['submit'])){
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style_login.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
    <title>login</title>
 
    <!-- font awesome cdn link  -->
@@ -67,7 +70,25 @@ if(isset($message)){
    }
 }
 ?>
-   
+   <form action="" method="post">
+<div class="container" onclick="onclick">
+  <div class="top"></div>
+  <div class="bottom"></div>
+  <div class="center">
+    <h2>Please Sign In</h2>
+    <input type="email" name="email" placeholder="enter your email" required class="box">
+    <input type="password" name="password" placeholder="enter your password" required class="box">
+    <input type="submit" name="submit" value="login now" class="btn">
+
+    <h2>&nbsp;</h2>
+  </div>
+</div>
+   </form>
+
+
+<script src='https://codepen.io/banik/pen/ReNNrO/3f837b2f0085b5125112fc455941ea94.js'></script>
+
+<!--    
 <div class="form-container">
 
    <form action="" method="post">
@@ -75,10 +96,12 @@ if(isset($message)){
       <input type="email" name="email" placeholder="enter your email" required class="box">
       <input type="password" name="password" placeholder="enter your password" required class="box">
       <input type="submit" name="submit" value="login now" class="btn">
-      <p>Don't have an account? <a href="register.php">register now</a></p>
-   </form>
+      -->
 
-</div>
+      <!-- <p>Don't have an account? <a href="register.php">register now</a></p>  -->
+   <!-- </form> -->
+
+</div> -->
 
 </body>
 </html>
