@@ -76,7 +76,7 @@ CREATE TABLE `chatbot` (
 INSERT INTO `chatbot` (`id`, `messages`, `response`) VALUES
 (1, 'Hey', 'Welcome to Neeyat'),
 (2, 'Hi','Welcome to Neeyat'),
-(3, 'what is your name', 'urfu'),
+(3, '', ''),
 (4, 'What can you do', 2),
 (7, 'what is PHP', 4),
 (8, 'What is ChatBot', 5),
