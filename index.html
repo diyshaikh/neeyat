@@ -1,109 +1,344 @@
-
-<html>
-	<head>
-	
-			<title>Neeyat</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neeyat</title>
             <link rel="icon" type="image/x-icon" href="Aarushi.png">
 			<link rel="stylesheet" href="style3.css">
-		
-		</head>
-        <body class="body">
-            
-                <div>
-                <div class="div1">
-                   <a href="index.html" ><img src="Aarushi.png" class=".sohnd"  >
-                    <h1 class="aarushi" >Neeyat </h1>
-                    
-                    </div>
-                    <div   class="div2" >
-                        <a href="https://www.facebook.com" ><img src="facebook.jpg" class=".sohnd"  ></a>
-                        &nbsp;
-                        <a href="https://www.instagram.com" ><img src="instagram.png" class=".sohnd" ></a>
-                        &nbsp;
-                        <a href="https://www.twitter.com" ><img src="twitter.jpg" class=".sohnd" ></a>
-                        &nbsp;
-                        <a href="https://www.linkedin.com" ><img src="linkedin.png" class=".sohnd" ></a>
-                        &nbsp;
-                        </div>
-                        <div class="divx1">
-                            <ul>
-                                <li class="li1"><a href="index.html">Home<a></li>
-                                &emsp;
-                                <li class="li1"><a href="about.html">About<a></a></li>
-                                &emsp;
-                                
-                                <li class="li1"><a href="contact_us.html">Contact Us<a></a></li>
-                                &emsp;
-                                <li class="li1"><a href="login.php">Books<a></a></li>
-                                &emsp;
-                                <li class="li2"><a 	href="Untitled-4.html">Assistance</a></li>
-                                </ul>
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+  *
+  {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+  }
+  body
+  {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    background: linear-gradient(#39519f, #3939e7);
+    z-index: -999;
+  }
+  img
+  {
+    width: 100%;
+  }
+  ul
+  {
+    list-style: none;
+  }
+  a
+  {
+    text-decoration: none;
+  }
+  .container
+  {
+    max-width: 80rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+    position: relative;
+  
+   
+  }
+  nav
+  {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 50;
+    z-index: 50;
     
-                        </div>
-                       
-                        </div>
-                        <br>
-                        <hr>
-                        <br>
+  }
+  nav .container
+  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+
+  }
+  .logo
+  {
+    max-width: 250px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .links{
+    position: relative;
+    left: 25%;
+  }
+  .links ul
+  {
+    display: flex;
+  }
+  .links a
+  {
+    display: inline-block;
+    padding: 0.7rem 1.2rem;
+    margin-right: 0.6rem;
+    color: #ffffff;
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1;
+    border-radius: 1.5rem;
+    transition: 0.3s;
+  }
+  
+  .links a.active,
+  .links a:hover
+  {
+    color: #0b0235;
+    background: #ffffff;
+  }
+  .hamburger-menu
+  {
+    width: 2.7rem;
+    height: 3rem;
+    z-index: 100;
+    position: relative;
+    display: none;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .hamburger-menu .bar 
+  {
+    position: relative;
+    width: 2.1rem;
+    height: 3px;
+    border-radius: 3px;
+    background: #ffffff;
+  }
+  .bar::before,
+  .bar::after
+  {
+    content: '';  
+    position: absolute;
+    width: 2.1rem;
+    height: 3px;
+    border-radius: 3px;
+    background: #ffffff;
+  }
+  .bar::before
+  {
+    transform: translateY(-9px);
+  }
+  .bar::after
+  {
+    transform: translateY(9px);
+  }
+  .hero
+  {
+    position: relative;
+    width: 100vw;
+    height: 150vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .hero img
+  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+  }
+  .hero #base
+  {
+    z-index: 6;
+  }
+  .hero #text
+  {
+    position: absolute;
+    color: #fefefe;
+    font-size: clamp(3rem, 7.5vw, 8rem);
+    white-space: nowrap;
+    letter-spacing: 3px;
+    z-index: 5;
+    right: -850px;
+  }
+  #btn
+  {
+    font-size: 18px;
+    position: absolute;
+    color: #fefefe;
+    text-decoration: none;
+    padding: 8px 30px;
+    display: inline-block;
+    border: 2px solid #fefefe;
+    border-radius: 25px;
+    background: transparent;
+    z-index: 7;
+    letter-spacing: 0.51px;
+    transform: translateY(200px);
+  }
+  
+.Assistance{
+
+}
+  
+</style>
+
+
+
+
+
+<body>
+ 
+
+  <body class="body">
+            
+    <div>
+    <!-- <div class="div1">
+       <a href="index.html" ><img src="Aarushi.png" class=".sohnd"  >
+        <h1 class="aarushi" >Neeyat </h1>
+        
+        </div> -->
+        
+        <!-- <div class="divx1">
+            <ul>
+                <li class="li1"><a href="index.html">Home<a></li>
+                &emsp;
+                <li class="li1"><a href="about.html">About<a></a></li>
+                &emsp;
                 
-                        <div class="div3">
-                            <img src="F.jpeg">
+                <li class="li1"><a href="contact_us.html">Contact Us<a></a></li>
+                &emsp;
+                <li class="li1"><a href="login.php">Books<a></a></li>
+                &emsp;
+                <li class="li2"><a 	href="Untitled-4.html">Assistance</a></li>
+                </ul>
 
-                        </div>
-                        <br><br>
-                        <hr>
-                        
-                        <table class="table1" >
-                            <tr>
-                                <td><br><img src="intro.jpeg" width="600px" height="500px">
-                      
-                    
-                    
-                    </td>
-                <td  width="600px" style="font-size:25px;"><p style="text-align:center">
-                                <h2>
-                                    <ins>INTRODUCTION
-                        </ins>
-                    </h2>
-                    
-                    
-                       </p>
-                       <br><br>
-                            
-                           <span height="100px"style="font-style: vara;text-align:justify">
-                                Having that one person who encourages you to do better can do wonders.
-                                 Our website will guide every underprivileged in the right direction towards the destination they choose for themselves. 
-                                 The child will have the opportunity to realize his/her maximum potential and will gain confidence with time.
-                                  Many of us would not be where we are without the support of mentors. 
-                                  The ultimate goal of our project is to provide the deprived, someone they can look upto and someone who motivates them every single day and provide guidance in the right direction.
-                                </span>
-                            </td>
-                           
-                    
-                            
-                        </table>
-                        <br>
-                        <br>
-                        
-                        <div class="footer">
-                            <div class="address">
-                                Registered address :Vishwakarma Institute Of Technology, Bibwewadi, Pune
-                                <br>
-                                Neeyat 2022. All rights reserved.
-                                </div>>
-                            <div class="stay_connected" >
-                          Stay Connected
-                          <div   class="div5" >
-                            <a href="https://www.facebook.com" ><img src="facebook.jpg" class=".sohnd"  ></a>
-                            &nbsp;
-                            <a href="https://www.instagram.com" ><img src="instagram.png" class=".sohnd" ></a>
-                            &nbsp;
-                            <a href="https://www.twitter.com" ><img src="twitter.jpg" class=".sohnd" ></a>
-                            &nbsp;
-                            <a href="https://www.linkedin.com" ><img src="linkedin.png" class=".sohnd" ></a>
-                            &nbsp;
-                            </div>
-                          
+        </div> -->
+        <!-- <div   class="div2" >
+            <a href="https://www.facebook.com" ><img src="facebook.jpg" class=".sohnd"  ></a>
+            &nbsp;
+            <a href="https://www.instagram.com" ><img src="instagram.png" class=".sohnd" ></a>
+            &nbsp;
+            <a href="https://www.twitter.com" ><img src="twitter.jpg" class=".sohnd" ></a>
+            &nbsp;
+            <a href="https://www.linkedin.com" ><img src="linkedin.png" class=".sohnd" ></a>
+            &nbsp;
+            </div>
+          
+           
+            </div> -->
+            <nav>
+                <div class="container">
+                  <div class="logo">
+                    <img src="neeyat logo.jpg" alt="">
+                  </div>
+                  <div class="links">
+                    <ul>
+                      <li><a href="index.html" class="active">Home</a></li>
+                      <li><a href="about.html">About</a></li>
+                      <li><a href="contact_us.html">Contact Us</a></li>
+                      <li><a href="login.php">Books</a></li>
+                       <li class="Assistance"> <a href="Untitled-4.html">Assistance</a></li>
+                    </ul>
+                  </div>
+                  <div class="hamburger-menu">
+                    <div class="bar"></div>
+                  </div>
+                </div>
+              </nav>
+              <section class="hero">
+                <img src="images/index_background.jpg" class="translateX" data-speed="0.25" id="moon" alt="">
+                <img src="images/index_platform-removebg-preview.png" class="translateY" data-speed="0.35" id="clouds" alt="">
+                <img src="images/index_mentee-removebg-preview.png" class="translateY" data-speed="0.15" id="mount" alt="">
+                <h1 id="text" class="translateX" data-speed="-3">Discover New Horizons</h1>
+                <a href="#" id="btn">Explore</a>
+                <img src="images/index_mentor_2-removebg-preview.png" class="translateY" data-speed="0" id="base" alt="">
+              </section>
+          <br><br>
+           <hr>
+           
+           <table class="table1" >
+               <tr>
+                   <td><br><img src="intro.jpeg" width="600px" height="500px">
+         
+       
+       
+       </td>
+   <td  width="600px" style="font-size:25px;"><p style="text-align:center">
+                   <h2>
+                       <ins>INTRODUCTION
+           </ins>
+       </h2>
+       
+       
+          </p>
+          <br><br>
+               
+              <span height="100px"style="font-style: vara;text-align:justify">
+                   Having that one person who encourages you to do better can do wonders.
+                    Our website will guide every underprivileged in the right direction towards the destination they choose for themselves. 
+                    The child will have the opportunity to realize his/her maximum potential and will gain confidence with time.
+                     Many of us would not be where we are without the support of mentors. 
+                     The ultimate goal of our project is to provide the deprived, someone they can look upto and someone who motivates them every single day and provide guidance in the right direction.
+                   </span>
+               </td>
+              
+       
+               
+           </table>
+           <br>
+           <br>
+           
+           <div class="footer">
+               <div class="address">
+                   Registered address :Vishwakarma Institute Of Technology, Bibwewadi, Pune
+                   <br>
+                   Neeyat 2022. All rights reserved.
+                   </div>>
+               <div class="stay_connected" >
+             Stay Connected
+             <div   class="div5" >
+               <a href="https://www.facebook.com" ><img src="facebook.jpg" class=".sohnd"  ></a>
+               &nbsp;
+               <a href="https://www.instagram.com" ><img src="instagram.png" class=".sohnd" ></a>
+               &nbsp;
+               <a href="https://www.twitter.com" ><img src="twitter.jpg" class=".sohnd" ></a>
+               &nbsp;
+               <a href="https://www.linkedin.com" ><img src="linkedin.png" class=".sohnd" ></a>
+               &nbsp;
+               </div>
+             
 
-                            </div>  
-            </body></html>
+               </div>  
+           
+           
+           
+           
+           
+           <script>
+
+
+
+
+     const translateX = document.querySelectorAll(".translateX");
+const translateY = document.querySelectorAll(".translateY");
+window.addEventListener("scroll" ,() => {
+  let scroll = window.pageYOffset;
+  translateX.forEach(element => {
+    let speed = element.dataset.speed;
+    element.style.transform = `translateX(${scroll * speed}px)`;
+  })
+  translateY.forEach(element => {
+    let speed = element.dataset.speed;
+    element.style.transform = `translateY(${scroll * speed}px)`;
+  })
+})
+   </script>
+</body>
+</html>
