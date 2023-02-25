@@ -73,6 +73,7 @@ CREATE TABLE `chatbot` (
 
 
 
+
 INSERT INTO `chatbot` (`id`, `messages`, `response`) VALUES
 (1, 'Hey', 'Hello'),
 (2, 'Hi','Hello'),
