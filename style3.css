@@ -177,21 +177,9 @@ li{
     top: 150px;
     left: 10px;
 }
-.intro{
-  top: 200px;
-}
 
-.intro_bg{
-  margin: 10%;
-  margin-top: 20%;
-  top: 300px;
-  
-}
-.intro_bg img{
-  height: 600px;
-  top: 200px;
-}
 
+<<<<<<< HEAD
 .intro_child{
   position: relative;
   top: -1250px;
@@ -232,6 +220,10 @@ font-size: 50px;
 margin: 30%;
 top: 100px;
 
+=======
+.into_bg{
+  background: linear-gradient();
+>>>>>>> ff3260b6e2dc43be5b9b1302e3373963effae495
 }
 
 .intro_text p{
@@ -323,8 +315,8 @@ top: 100px;
   
     z-index: 1;
     position: absolute;
-    top: -75px;
-    right: -75px;
+    top: -175px;
+    left: -175px;
   
     border-radius: 50%;
   
