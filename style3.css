@@ -28,12 +28,12 @@ body{
     font-family:monospace;
 }
 h1{  position: relative;
-    text-align:left;
-    margin-top: -95px;
-    font-style: oblique;
-    font-size: 50px;
-    color: #002244;
-      
+  text-align:left;
+  margin-top: -95px;
+  font-style: oblique;
+  font-size: 50px;
+  color: #002244;
+    
 }
 hr{
     width: 200%;
@@ -74,7 +74,7 @@ hr{
     background-color: #002244;
     padding: 10px;
       }
-li{
+      li{
         display: inline;
         
 
@@ -179,59 +179,6 @@ li{
 }
 
 
-<<<<<<< HEAD
-.intro_child{
-  position: relative;
-  top: -1250px;
-  margin-top: 20%;
-  margin-left:20%;
-  margin-right: 60%;
-  
-}
-.intro_child img{
-  
- 
-  height:700px;
-  width: 800px;
-  z-index: 1;
-  border: ;
-  border-radius: 10%;
-}
-
-.intro_text{
-  height: 700px;
-  width: 700px;
-  background-color: rgba(216, 241, 255, 0.945);
-  z-index: 1;
-  border: ;
-  border-radius: 10%;
-  position: relative; 
-  bottom: 1900px;
-  margin-top: 20%;
-  margin-left:50%;
-  margin-right: 20%;
-  align-content: center;
-  
-}
-
-.intro_text_heading{
-
-font-size: 50px;
-margin: 30%;
-top: 100px;
-
-=======
-.into_bg{
-  background: linear-gradient();
->>>>>>> ff3260b6e2dc43be5b9b1302e3373963effae495
-}
-
-.intro_text p{
-
-  font-size: 30px;
- margin: 8%;
-  
-  }
 .ag-format-container {
     width: 1142px;
     margin: 0 auto;
