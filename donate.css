@@ -268,11 +268,12 @@ footer .aimg
 }
 footer .pages
 {
-    width:25%;
+    width:68%;
     text-align: center;
     display: inline-block;
-    margin-left: 600px;
+    margin-left: 275px;
     font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
 }
 
 footer .pages p
@@ -461,7 +462,7 @@ footer p
     text-align: center;
     margin: 0% 20% 0% 20%;
     padding-top:10%;
-    padding-bottom: 10%;
+    padding-bottom: 3%;
 }
 .donate .donate_container h1
 {
