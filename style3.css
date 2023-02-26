@@ -18,7 +18,7 @@ body{
     /* background-size:cover;
     /* background-color: rgba(0, 0, 0, 0.2); */
     width: 50%;
-    height: 100%;
+
     overflow-x: hidden;
  
 }
@@ -62,7 +62,6 @@ hr{
 .div2:hover{
     size: 20px;
 } */
-   
 
 .divx1{
     align-content: justify;
@@ -195,7 +194,7 @@ li{
 
 .intro_child{
   position: relative;
-  top: -1300px;
+  top: -1250px;
   margin-top: 20%;
   margin-left:20%;
   margin-right: 60%;
@@ -205,33 +204,42 @@ li{
   
  
   height:700px;
-  width: 700px;
+  width: 800px;
   z-index: 1;
   border: ;
   border-radius: 10%;
 }
 
 .intro_text{
-  height:700px;
+  height: 700px;
   width: 700px;
   background-color: rgba(216, 241, 255, 0.945);
   z-index: 1;
   border: ;
   border-radius: 10%;
   position: relative; 
-  bottom: 2000px;
+  bottom: 1900px;
   margin-top: 20%;
-  margin-left:45%;
+  margin-left:50%;
   margin-right: 20%;
+  align-content: center;
   
 }
 
-.intro_text ins{
-font-family: "Lucida" Grande, sans-serif;
-font-size: 30px;
-margin-left:38%;
+.intro_text_heading{
+
+font-size: 50px;
+margin: 30%;
 top: 100px;
+
 }
+
+.intro_text p{
+
+  font-size: 30px;
+ margin: 8%;
+  
+  }
 .ag-format-container {
     width: 1142px;
     margin: 0 auto;
