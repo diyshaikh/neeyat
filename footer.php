@@ -22,7 +22,7 @@
          <h3>Contact Us</h3>
          <p> <i class="fas fa-phone"></i> +91 8329485165</p>
          <p> <i class="fas fa-phone"></i> +91 7972560116 </p>
-         <p> <i class="fas fa-envelope"></i>aarushi </p>
+         <p> <i class="fas fa-envelope"></i>Neeyat </p>
          <p> <i class="fas fa-map-marker-alt"></i> Pune,India - 410506 </p>
       </div>
 
