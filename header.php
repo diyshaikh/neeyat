@@ -27,7 +27,7 @@ if(isset($message)){
 
    <div class="header-2">
       <div class="flex">
-         <a href="home.php" class="logo">Aarushi</a>
+         <a href="index.html" class="logo">Neeyat</a>
 
          <nav class="navbar">
             <a href="home.php">Home</a>
