@@ -1,6 +1,7 @@
 <?php
 
 include ("db_connect.php") ;
+
      $name = $_POST['name'];
      $gender = $_POST['gender'];
      $age = $_POST['age'];

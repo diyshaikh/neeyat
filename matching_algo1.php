@@ -1,11 +1,11 @@
 <?php  
  $connect = mysqli_connect("localhost", "root", "", "neeyat");  
- session_start();
- if (isset($_GET['aoi'])){
- $aoi= $_SESSION['aoi'];
- $Pincode= $_SESSION['Pincode'];
- }
- $sql = " SELECT * FROM mentee INNER JOIN mentor ON mentor.aoi = mentee.aoi AND mentor.Pincode=mentee.Pincode"; 
+//  session_start();
+//  if (isset($_GET['aoi'])){
+//  $aoi= $_SESSION['aoi'];
+//  $Pincode= $_SESSION['Pincode'];
+//  }
+ $sql = " SELECT * FROM mentee  JOIN mentor ON mentor.aoi = mentee.aoi AND mentor.Pincode=mentee.Pincode"; 
  $result = mysqli_query($connect, $sql);
  ?>
  <!DOCTYPE html>  
@@ -143,18 +143,22 @@ li{
                           {  
                                while($row = mysqli_fetch_array($result))  
                                {  
+                                   $new = $row
                           ?>  
 
-                          <tr>  
-                               <td><?php echo $row["name"];?></td>  
-                               <td><?php echo $row["local"];?></td>  
-                               <td><?php echo $row["email"];?></td>  
-                               <td><?php echo $row["aoi"]; ?></td>  
-                          </tr>  
+                            
                           <?php  
+                          }
                                }  
-                          }  
+                         
                           ?>  
+                          <tr>  
+                               <td><?php echo $new["name"];?></td>  
+                               <td><?php echo $new["local"];?></td>  
+                               <td><?php echo $new["email"];?></td>  
+                               <td><?php echo $new["aoi"]; ?></td>  
+
+                          </tr>
                      </table>  
                 </div>  
            </div>  
