@@ -1,12 +1,32 @@
 <?php  
  $connect = mysqli_connect("localhost", "root", "", "neeyat");  
  session_start();
+ //$aoi = '';
  if (isset($_GET['aoi'])){
- $aoi= $_SESSION['aoi'];
- $Pincode= $_SESSION['Pincode'];
+     $aoi= $_SESSION['aoi'];
+     $Pincode= $_SESSION['Pincode'];
  }
- $sql = " SELECT * FROM mentee INNER JOIN mentor ON mentor.aoi = mentee.aoi AND mentor.Pincode=mentee.Pincode"; 
+ echo '<pre>' . print_r($_SESSION, TRUE) . '</pre>';
+ //$sql = " SELECT * FROM mentee INNER JOIN mentor ON mentor.aoi = mentee.aoi AND mentor.Pincode=mentee.Pincode";
+ 
+ //if (isset($aoi)) {
+     //$sql = "SELECT * FROM mentee where mentee.aoi = '$aoi'" ;
+    //$sql = "SELECT * FROM mentee INNER JOIN mentor ON mentor.aoi = mentee.aoi AND mentor.Pincode = mentee.Pincode WHERE mentor.aoi = '$aoi'";
+     //$result = mysqli_query($connect, $sql);
+ //}
+ //if (isset($_GET['aoi'])) {
+     $aoi = $_SESSION['aoi'];
+     $Pincode = $_SESSION['Pincode'];
+     $sql .= "Select * from mentor  where mentor.aoi = '$aoi'";
+     echo $sql;
+     
+ //}
+//else{echo "WE are in else";}
  $result = mysqli_query($connect, $sql);
+ //else{$sql = "SELECT * FROM mentee INNER JOIN mentor ON mentor.aoi = mentee.aoi AND mentor.Pincode = mentee.Pincode WHERE mentor.aoi = '$aoi'";
+    // $result = mysqli_query($connect, $sql);}
+// $sql = "SELECT * FROM mentee where mentee.aoi = '$aoi'" ;
+ //$result = mysqli_query($connect, $sql);
  ?>
  <!DOCTYPE html>  
  <html>  
@@ -139,9 +159,11 @@ li{
                                <th>Field of Interest </th>  
                           </tr>  
                           <?php  
-                          if(mysqli_num_rows($result) > 0)  
+                          //$result = null;
+                          if (mysqli_num_rows($result) > 0) 
                           {  
-                               while($row = mysqli_fetch_array($result))  
+                               while($row = mysqli_fetch_array($result))
+                                   //$row = $result->fetch_assoc())  
                                {  
                           ?>  
 
