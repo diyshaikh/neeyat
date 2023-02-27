@@ -268,9 +268,18 @@ footer .aimg
 }
 footer .pages
 {
+<<<<<<< HEAD
     width:25%;
     text-align: center;
     display: inline-block;
+=======
+    width:68%;
+    text-align: center;
+    display: inline-block;
+    margin-left: 275px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+>>>>>>> 3dc400830fbae148707759adde0469bd8a034bc4
 }
 
 footer .pages p
@@ -459,7 +468,11 @@ footer p
     text-align: center;
     margin: 0% 20% 0% 20%;
     padding-top:10%;
+<<<<<<< HEAD
     padding-bottom: 10%;
+=======
+    padding-bottom: 3%;
+>>>>>>> 3dc400830fbae148707759adde0469bd8a034bc4
 }
 .donate .donate_container h1
 {
