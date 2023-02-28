@@ -451,7 +451,7 @@ footer p
 .donate
 {
     font-family: 'Trebuchet MS', sans-serif;
-    background-image: url("images/donate_back.jpg");
+    background-image: url("images/india-education-brief.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -476,7 +476,7 @@ footer p
 }
 .donate .donate_container h1
 {
-    color: rgb(79, 255, 88);
+    color: rgb(41, 164, 200);
     line-height: 100px;
 }
 .donate .donate_container p

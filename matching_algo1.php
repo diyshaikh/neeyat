@@ -1,6 +1,6 @@
 <?php  
  $connect = mysqli_connect("localhost", "root", "", "neeyat");  
-//  session_start();
+session_start();
 //  if (isset($_GET['aoi'])){
 //  $aoi= $_SESSION['aoi'];
 //  $Pincode= $_SESSION['Pincode'];
