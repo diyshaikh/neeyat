@@ -1,10 +1,13 @@
 <?php  
  $connect = mysqli_connect("localhost", "root", "", "neeyat");  
 session_start();
-//  if (isset($_GET['aoi'])){
-//  $aoi= $_SESSION['aoi'];
-//  $Pincode= $_SESSION['Pincode'];
-//  }
+if (isset($_GET['aoi'])){
+$aoi= $_SESSION['aoi'];
+$Pincode= $_SESSION['Pincode'];
+}
+
+
+//$sql = "SELECT * FROM mentee where mentee.aoi = '$aoi'" ;
  $sql = " SELECT * FROM mentee  JOIN mentor ON mentor.aoi = mentee.aoi AND mentor.Pincode=mentee.Pincode"; 
  $result = mysqli_query($connect, $sql);
  ?>

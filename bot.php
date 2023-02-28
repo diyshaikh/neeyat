@@ -15,6 +15,11 @@
     </div>
     <div id="body">
     
+      
+   
+      
+
+    
       <!-- This section will be dynamically inserted from JavaScript -->
         <div class="userSection">
           <div class="messages user-message">
