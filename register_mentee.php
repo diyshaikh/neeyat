@@ -1,6 +1,7 @@
 <?php
 
 include ("db_connect.php") ;
+session_start();
 
      $name = $_POST['name'];
      $gender = $_POST['gender'];
