@@ -67,14 +67,14 @@ background-color:#002244
 
 .team .team_member h3{
 color: #c66244;
-font-size: 26px;
+font-size: 30px;
 margin-top: 50px;
 }
 
 .team .team_member p.role{
-color: #ccc;
+color: #838383;
 margin: 12px 0;
-font-size: 12px;
+font-size: 18px;
 text-transform: uppercase;
 }
 
@@ -171,6 +171,7 @@ li{
   margin-left: 300px;
   margin-right: 300px;
   border-radius: 30px;
+  padding: 3%;
 }
 .quote{
   color: #c66244;
@@ -180,28 +181,123 @@ li{
   padding-top: 20px;
 }
 
+.container
+  {
+    max-width: 80rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+    position: relative;
+  
+   
+  }
+  nav
+  {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 50;
+    z-index: 50;
+    
+  }
+  nav .container
+  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+
+  }
+  .logo
+  {
+    max-width: 250px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .links {
+    position: relative;
+    left:5%;
+  }
+  
+  .active1 {
+    position: absolute;
+    left: 25%;
+  }
+
+  .links ul
+  {
+    display: flex;
+  }
+  .links a
+  {
+    display: inline-block;
+    padding: 0.7rem 1.2rem;
+    margin-right: 0.6rem;
+    color: #ffffff;
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1;
+    border-radius: 1.5rem;
+    transition: 0.3s;
+  }
+  
+  .links a
+  {
+    display: inline-block;
+    padding: 0.7rem 1.2rem;
+    margin-right: 0.6rem;
+    color: #ffffff;
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1;
+    border-radius: 1.5rem;
+    transition: 0.3s;
+  }
+  .links a.active1,
+  .links a:hover
+  {
+    color: #0b0235;
+    background: #ffffff;
+  }
+
+  .links a.active,
+  .links a:hover
+  {
+    color: #0b0235;
+    background: #ffffff;
+  }
+
+
 
 </style>
 
 </script>
 <div><div>
   
-        <div class="div0">
-          <div class="divx1">
-              <ul>
-                  <li class="li1"><a href="index.html">Home<a></li>
-                  &emsp;
-                  <li class="li1"><a href="about.html">About<a></a></li>
-                  &emsp;
-                  <li class="li1"><a href="contact_us.html">Contact Us<a></a></li>
-                  &emsp;
-                  <li class="li1"><a href="login.php">Books<a></a></li>
-                  &emsp;
-                  <li class="li2"><a 	href="Untitled-4.html">Assistance</a></li>
-                  </ul>
+  <nav>
+    <div class="container">
+      <div class="logo" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 50px; color: white;">
+        <b>NEEYAT</b>
+      </div>
+      <div class="links">
+        <ul>
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="bot.php"  style="left: 99%; top: 0%; position: absolute;">Chat</a></li>
+          <li><a href="donate.html" style="left: -20%; top: 0%; position: absolute;">Donate</a></li>
 
-          </div>
-          <div>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact_us.html">Contact Us</a></li>
+          <li><a href="login.php">Books</a></li>
+           <li class="Assistance"> <a href="Untitled-4.html">Assistance</a></li>
+        </ul>
+      </div>
+      <div class="hamburger-menu">
+        <div class="bar"></div>
+      </div>
+    </div>
+  </nav>
          
           </div><a id="aboutheader" href="index.html"><img src="https://img.icons8.com/external-kmg-design-glyph-kmg-design/2x/external-back-arrow-kmg-design-glyph-kmg-design.png" width="40px"></a></div>
 <br><br>
@@ -220,9 +316,9 @@ li{
         <img src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png" alt="Team_image">
       </div>
       <h3>Muaz Shaikh</h3>
-      <p class="role">B. Tech <br> Programmer coleader</p>
+      <p class="role">B. Tech <br> Backend Developer</p>
     </div>
-    <div class="team_member">
+    <!-- <div class="team_member">
       <div class="team_img">
         <img src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png" alt="Team_image" size="auto">
       </div>
@@ -231,7 +327,7 @@ li{
       <p>"Do Something Today That Your Future Self Will Thank You For."</p>
       <br>
       <a id="diyainsta" href="https://www.instagram.com/_sh.diya_/"><img src="https://www.freepnglogos.com/uploads/logo-ig-png/logo-ig-stunning-instagram-logo-vector-download-for-new-7.png" width="30px"></a>
-    </div>
+    </div> -->
     <div class="team_member">
       <div class="team_img">
         <img src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png" alt="Team_image">
@@ -250,23 +346,15 @@ li{
       <div class="team_img">
         <img src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png" alt="Team_image">
       </div>
-      <h3>Shirin Shaikh</h3>
+      <h3>Sanchit Paranjape</h3>
       <p class="role">B. Tech <br> Frontend Developer Supporter</p>
     </div>
     <div class="team_member">
       <div class="team_img">
         <img src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png" alt="Team_image">
       </div>
-      <h3>Aamir Shaikh</h3>
-      <p class="role">B. Tech <br> Designer and Content writer</p>
+      <h3>Sanchita Gupta</h3>
+      <p class="role">B. Tech <br> Backend Developer and Design</p>
     </div>
-    <div class="team_member">
-      <div class="team_img">
-        <img src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png" alt="Team_image">
-      </div>
-      <h3>Tayyab Shaikh</h3>
-      <p class="role">B. Tech <br> Support Lead</p>
-    </div>
-  </div>
- 
+  
 </div>

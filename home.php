@@ -36,6 +36,8 @@ if(isset($_POST['add_to_cart'])){
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Roboto'><link rel="stylesheet" href="style_book_index.css">
    <title>home</title>
 
    <!-- font awesome cdn link  -->
@@ -49,15 +51,95 @@ if(isset($_POST['add_to_cart'])){
    
 <?php include 'header.php'; ?>
 
-<section class="home">
+<div class="carousel">
+	<div class="carousel-item">
+		<div class="carousel-box">
+			<div class="title">H.C Verma 1</div>
+			<div class="num">01</div>
+			<img src="https://3.bp.blogspot.com/-tkzv6oOcg2Y/W9r4DJoZrgI/AAAAAAAAAYk/J7RnjTSuWSwx61kExt0MNz_IkGuL8RQjgCLcBGAs/s400/41AnJ%252Bzt7iL._BO1%252C204%252C203%252C200_.jpg" />
+		</div>
+	</div>
 
-   <div class="content">
-      <h3>Hand Picked Book to your door.</h3>
-      <p>One glance at a book and you hear the voice of another person, perhaps someone dead for 1,000 years. To read is to voyage through time.</p>
-      <a href="about.php" class="white-btn">discover more</a>
-   </div>
+	<div class="carousel-item">
+		<div class="carousel-box">
+			<div class="title">H.C Verma 2</div>
+			<div class="num">02</div>
+			<img src="https://cdn.shopclues.com/images/detailed/78828/124011334_HC202_1500643182.jpg" />
+		</div>
+	</div>
 
-</section>
+	<div class="carousel-item">
+		<div class="carousel-box">
+			<div class="title">O.P Tandon</div>
+			<div class="num">03</div>
+			<img
+				src="https://3.bp.blogspot.com/-xvctOAjeeuQ/WheyYljmX0I/AAAAAAAAFhY/9acoa11KIOgQQp7SbONUt1F4fz5tZC1lgCLcBGAs/s1600/91NuMboG4KL.jpg"
+			/>
+		</div>
+	</div>
+
+	<div class="carousel-item">
+		<div class="carousel-box">
+			<div class="title">Atkins</div>
+			<div class="num">04</div>
+			<img src="https://www.oup.com.au/new_book_images/covers/9780198769866.jpg" />
+		</div>
+	</div>
+
+	<div class="carousel-item">
+		<div class="carousel-box">
+			<div class="title">Arihant</div>
+			<div class="num">05</div>
+			<img src="https://bookwindow.in/image/uploads/1506505746buy-arihant-mathematics-master-resource-book-for-iit-jee-exam-arihant-publcation.jpg" />
+		</div>
+	</div>
+
+	<div class="carousel-item">
+		<div class="carousel-box">
+			<div class="title">Irodov</div>
+			<div class="num">06</div>
+			<img src="https://m.media-amazon.com/images/I/61n+461iagL.jpg" />
+		</div>
+	</div>
+
+	<div class="carousel-item">
+		<div class="carousel-box">
+			<div class="title">NCERT for NEET biology</div>
+			<div class="num">07</div>
+			<img src="https://cdn.shopaccino.com/boookart/products/9789324196873-477634_l.jpg?v=447" />
+		</div>
+	</div>
+
+	<div class="carousel-item">
+		<div class="carousel-box">
+			<div class="title">MCGraw Hill</div>
+			<div class="num">08</div>
+			<img src="https://1.bp.blogspot.com/-kCZRvcBwaIM/Xzf88pvxThI/AAAAAAAAD0U/d3WXJmOfK7UAnpROMDhXTnq0cE7D4oRwwCLcBGAsYHQ/s969/WhatsApp%2BImage%2B2020-08-15%2Bat%2B20.19.48%2B%25282%2529.jpeg" />
+		</div>
+	</div>
+
+	<div class="carousel-item">
+		<div class="carousel-box">
+			<div class="title">N Avasthi</div>
+			<div class="num">09</div>
+			<img src="https://imgs.search.brave.com/G5KUKmWqpoBNATwnWbrQ8EVRz-GkuRTKUS4cvNSC2QI/rs:fit:353:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5n/SjBBMm5PenpnTFBm/aU5zdkl6cGhBSGFK/NyZwaWQ9QXBp" />
+		</div>
+	</div>
+	<div class="carousel-item">
+		<div class="carousel-box">
+			<div class="title">R.D Sharma</div>
+			<div class="num">10</div>
+			<img src="https://imgs.search.brave.com/CJ4cu2g_unIG6RL7YpqMp1_qcWJQZggHz94Bryij6MY/rs:fit:344:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5W/SndkT282R05VZnZj/aWNqc2FZSl9BSGFL/TiZwaWQ9QXBp" />
+		</div>
+	</div>
+</div>
+
+<div class="cursor"></div>
+<div class="cursor cursor2"></div>
+<!-- partial -->
+  <script  src="script_book_index.js"></script>
+
+
 
 <section class="products">
 

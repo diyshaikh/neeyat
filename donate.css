@@ -243,7 +243,7 @@ body
 {
     font-size: 25px;
     line-height: 2px;
-    color: rgb(79, 255, 88);
+    color: rgb(20, 80, 121);
     font-weight: bolder;
 }
 .product .product_container .item .item_content p
@@ -476,7 +476,7 @@ footer p
 }
 .donate .donate_container h1
 {
-    color: rgb(79, 255, 88);
+    color: rgb(106, 161, 224);
     line-height: 100px;
 }
 .donate .donate_container p
