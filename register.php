@@ -34,6 +34,8 @@ if(isset($_POST['submit'])){
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style_login.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
    <title>register</title>
 
    <!-- font awesome cdn link  -->
@@ -42,6 +44,13 @@ if(isset($_POST['submit'])){
    <!-- custom css file link  -->
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="style_login.css">
+<style>
+.container:hover .top:before, .container:hover .top:after, .container:hover .bottom:before, .container:hover .bottom:after, .container:active .top:before, .container:active .top:after, .container:active .bottom:before, .container:active .bottom:after {
+  margin-left: 200px;
+  transform-origin: -200px 50%;
+  transition-delay: 0s;
+}
+   </style>
 
 </head>
 <body>
@@ -62,42 +71,30 @@ if(isset($message)){
 ?>
 
 
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Slide Navbar</title>
-	<link rel="stylesheet" type="text/css" href="slide navbar style.css">
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
-</head>
-<body>
-	<div class="main">  	
-		<input type="checkbox" id="chk" aria-hidden="true">
+<form action="" method="post">
+<div class="container" onclick="onclick">
+  <div class="top"></div>
+  <div class="bottom"></div>
+  <div class="center">
+    <h2>Please Sign In</h2>
+    <input type="text" name="name" placeholder="enter your name" required class="box">
+    <input type="email" name="email" placeholder="enter your email" required class="box">
+    <input type="password" name="password" placeholder="enter your password" required class="box">
+    <input type="password" name="cpassword" placeholder="confirm your password" required class="box">
+    <select name="user_type" class="box">
+         <option value="user">user</option>
+         <option value="admin">admin</option>
+      </select>
+      <input type="submit" name="submit" value="register now" class="btn">
+      <p>already have an account? <a href="login.php">login now</a></p>
 
-			<div class="signup">
-         <form action="" method="post">					<label for="chk" aria-hidden="true"><a href="register.php"> Sign up</a></label>
-               <input type="text" name="name" placeholder="enter your name" required class="box">
-               <input type="email" name="email" placeholder="enter your email" required class="box">
-               <input type="password" name="password" placeholder="enter your password" required class="box">
-               <select name="user_type" class="box">
-                    <option value="user">user</option>
-                   <option value="admin">admin</option>
-                </select>
-					<input type="submit" name="submit" value="Register now" class="rbtn">
-               
-				</form>
-			</div>
+    <h2>&nbsp;</h2>
+  </div>
+</div>
+   </form>
 
-			<div class="login">
-         <form action="" method="post">
-					<label for="chk" aria-hidden="true"><a href="login.php"> Login</a></label>
-					<input type="email" name="email" placeholder="Email" required="">
-					<input type="password" name="password" placeholder="Password" required="">
-					<input type="submit" name="submit" value="login now" class="btn">
-				</form>
-			</div>
-	</div>
-</body>
-</html>
+
+<script src='https://codepen.io/banik/pen/ReNNrO/3f837b2f0085b5125112fc455941ea94.js'></script>
 
 <!-- 
 

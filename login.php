@@ -79,6 +79,7 @@ if(isset($message)){
     <input type="email" name="email" placeholder="enter your email" required class="box">
     <input type="password" name="password" placeholder="enter your password" required class="box">
     <input type="submit" name="submit" value="login now" class="btn">
+    <p>Don't have an account? <a href="register.php"><b>register now</b></a></p> 
 
     <h2>&nbsp;</h2>
   </div>
@@ -98,7 +99,6 @@ if(isset($message)){
       <input type="submit" name="submit" value="login now" class="btn">
       -->
 
-      <!-- <p>Don't have an account? <a href="register.php">register now</a></p>  -->
    <!-- </form> -->
 
 </div> -->

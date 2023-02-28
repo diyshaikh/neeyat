@@ -30,6 +30,8 @@ if(isset($message)){
          <a href="index.html" class="logo">Neeyat</a>
 
          <nav class="navbar">
+         <a href="index.html" >Neeyat</a>
+
             <a href="home.php">Home</a>
             <a href="about.php">About</a>
             <a href="shop.php">Shop</a>
