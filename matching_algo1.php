@@ -2,22 +2,19 @@
  $connect = mysqli_connect("localhost", "root", "", "neeyat");  
 session_start();
 
+    
+//$sql ="SELECT * FROM mentee WHERE mentee.aoi = '$aoi'";
+$sql = "SELECT *
+ FROM mentor
+ WHERE aoi = (SELECT aoi
+              FROM mentee
+              WHERE id = (SELECT MAX(id)
+                          FROM mentee))";
 
-//$sql = "SELECT * FROM mentee where mentee.aoi = '$aoi'" ;
- $sql = " SELECT * FROM mentee  JOIN mentor ON mentor.aoi = mentee.aoi AND mentor.Pincode=mentee.Pincode"; 
-=======
-//  if (isset($_GET['aoi'])){
-//  $aoi= $_SESSION['aoi'];
-//  $Pincode= $_SESSION['Pincode'];
-//  }
- $sql = " SELECT *
- FROM mentee
- JOIN mentor ON mentor.aoi = mentee.aoi AND mentor.Pincode = mentee.Pincode
- ORDER BY mentee.id DESC
- LIMIT 1;"; 
->>>>>>> 7a42e639fe664fe6ab6ac26c5f408439602d90ef
- $result = mysqli_query($connect, $sql);
- ?>
+$result = mysqli_query($connect,$sql);
+
+
+?>
  <!DOCTYPE html>  
  <html>  
 
@@ -198,19 +195,22 @@ session_start();
       {  
  ?>  
 
-                          <tr>  
-                               <td><?php echo $row["name"];?></td>  
-                               <td><?php echo $row["local"];?></td>  
-                               <td><?php echo $row["email"];?></td>  
-                               <td><?php echo $row["aoi"]; ?></td>  
-                          </tr>  
-                          <?php  
-                               }  
-                          }  
-                          ?>  
-                     </table>  
-                </div>  
-           </div>  
-           <br />  
-      </body>  
- </html> what is the problem
+ <tr>  
+      <td><?php echo $row["name"];?></td>  
+       
+      <td><?php echo $row["email"];?></td>  
+      <td><?php echo $row["aoi"]; ?></td>  
+ </tr>  
+ <?php  
+      }  
+ }
+ 
+ 
+
+ ?>  
+</table>  
+</div>  
+</div>  
+<br />  
+</body>  
+</html>
