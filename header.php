@@ -29,8 +29,13 @@ if(isset($message)){
       <div class="flex">
 
          <nav class="navbar">
+<<<<<<< HEAD
          <a href="index.html">Neeyat</a>
             
+=======
+         <a href="index.html" >Neeyat</a>
+
+>>>>>>> 5fed55730a37323d1fc8d4b1bdc366cc608d0aae
             <a href="home.php">Home</a>
             <a href="about.php">About</a>
             <a href="shop.php">Shop</a>

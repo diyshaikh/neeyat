@@ -44,6 +44,7 @@ if(isset($_POST['submit'])){
    <!-- custom css file link  -->
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="style_login.css">
+<<<<<<< HEAD
    <style>
       @import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
 *, *:before, *:after {
@@ -132,6 +133,15 @@ body {
   font-family: inherit;
 }
       </style>
+=======
+<style>
+.container:hover .top:before, .container:hover .top:after, .container:hover .bottom:before, .container:hover .bottom:after, .container:active .top:before, .container:active .top:after, .container:active .bottom:before, .container:active .bottom:after {
+  margin-left: 200px;
+  transform-origin: -200px 50%;
+  transition-delay: 0s;
+}
+   </style>
+>>>>>>> 5fed55730a37323d1fc8d4b1bdc366cc608d0aae
 
 </head>
 <body>
@@ -152,6 +162,7 @@ if(isset($message)){
 ?>
 
 
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <!-- <head> -->
@@ -181,14 +192,39 @@ if(isset($message)){
       <input type="submit" name="submit" value="register now" class="btn">
       <p>already have an account? <a href="login.php">login now</a></p>
 
+=======
+<form action="" method="post">
+<div class="container" onclick="onclick">
+  <div class="top"></div>
+  <div class="bottom"></div>
+  <div class="center">
+    <h2>Please Sign In</h2>
+    <input type="text" name="name" placeholder="enter your name" required class="box">
+    <input type="email" name="email" placeholder="enter your email" required class="box">
+    <input type="password" name="password" placeholder="enter your password" required class="box">
+    <input type="password" name="cpassword" placeholder="confirm your password" required class="box">
+    <select name="user_type" class="box">
+         <option value="user">user</option>
+         <option value="admin">admin</option>
+      </select>
+      <input type="submit" name="submit" value="register now" class="btn">
+      <p>already have an account? <a href="login.php">login now</a></p>
+
+>>>>>>> 5fed55730a37323d1fc8d4b1bdc366cc608d0aae
     <h2>&nbsp;</h2>
   </div>
 </div>
    </form>
+<<<<<<< HEAD
 			<!-- </div>
 	</div>
 </body> -->
 </html>
+=======
+
+
+<script src='https://codepen.io/banik/pen/ReNNrO/3f837b2f0085b5125112fc455941ea94.js'></script>
+>>>>>>> 5fed55730a37323d1fc8d4b1bdc366cc608d0aae
 
 <!-- 
 
