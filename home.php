@@ -47,16 +47,28 @@ if(isset($_POST['add_to_cart'])){
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Roboto'><link rel="stylesheet" href="style_book_index.css">
+<link rel="stylesheet" href="style_book_card.css">
+<!-- partial:index.partial.html -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+<style>
+.box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+   gap:1.5rem;
+   max-width: 1200px;
+   margin:0 auto;
+   align-items: flex-start;
+}
+</style>
 </head>
 <body>
    
 <?php include 'header.php'; ?>
 
-<<<<<<< HEAD
-<!--------------ANIMATION------------------>
-<div>
-=======
->>>>>>> 5fed55730a37323d1fc8d4b1bdc366cc608d0aae
 <div class="carousel">
 	<div class="carousel-item">
 		<div class="carousel-box">
@@ -65,26 +77,6 @@ if(isset($_POST['add_to_cart'])){
 			<img src="https://3.bp.blogspot.com/-tkzv6oOcg2Y/W9r4DJoZrgI/AAAAAAAAAYk/J7RnjTSuWSwx61kExt0MNz_IkGuL8RQjgCLcBGAs/s400/41AnJ%252Bzt7iL._BO1%252C204%252C203%252C200_.jpg" />
 		</div>
 	</div>
-<<<<<<< HEAD
-
-	<div class="carousel-item">
-		<div class="carousel-box">
-			<div class="title">H.C Verma 2</div>
-			<div class="num">02</div>
-			<img src="https://cdn.shopclues.com/images/detailed/78828/124011334_HC202_1500643182.jpg" />
-		</div>
-	</div>
-
-	<div class="carousel-item">
-		<div class="carousel-box">
-			<div class="title">O.P Tandon</div>
-			<div class="num">03</div>
-			<img
-				src="https://3.bp.blogspot.com/-xvctOAjeeuQ/WheyYljmX0I/AAAAAAAAFhY/9acoa11KIOgQQp7SbONUt1F4fz5tZC1lgCLcBGAs/s1600/91NuMboG4KL.jpg"
-			/>
-		</div>
-	</div>
-=======
 
 	<div class="carousel-item">
 		<div class="carousel-box">
@@ -166,79 +158,51 @@ if(isset($_POST['add_to_cart'])){
   <script  src="script_book_index.js"></script>
 
 
->>>>>>> 5fed55730a37323d1fc8d4b1bdc366cc608d0aae
 
-	<div class="carousel-item">
-		<div class="carousel-box">
-			<div class="title">Atkins</div>
-			<div class="num">04</div>
-			<img src="https://www.oup.com.au/new_book_images/covers/9780198769866.jpg" />
-		</div>
-	</div>
-
-	<div class="carousel-item">
-		<div class="carousel-box">
-			<div class="title">Arihant</div>
-			<div class="num">05</div>
-			<img src="https://bookwindow.in/image/uploads/1506505746buy-arihant-mathematics-master-resource-book-for-iit-jee-exam-arihant-publcation.jpg" />
-		</div>
-	</div>
-
-	<div class="carousel-item">
-		<div class="carousel-box">
-			<div class="title">Irodov</div>
-			<div class="num">06</div>
-			<img src="https://m.media-amazon.com/images/I/61n+461iagL.jpg" />
-		</div>
-	</div>
-
-	<div class="carousel-item">
-		<div class="carousel-box">
-			<div class="title">NCERT for NEET biology</div>
-			<div class="num">07</div>
-			<img src="https://cdn.shopaccino.com/boookart/products/9789324196873-477634_l.jpg?v=447" />
-		</div>
-	</div>
-
-	<div class="carousel-item">
-		<div class="carousel-box">
-			<div class="title">MCGraw Hill</div>
-			<div class="num">08</div>
-			<img src="https://1.bp.blogspot.com/-kCZRvcBwaIM/Xzf88pvxThI/AAAAAAAAD0U/d3WXJmOfK7UAnpROMDhXTnq0cE7D4oRwwCLcBGAsYHQ/s969/WhatsApp%2BImage%2B2020-08-15%2Bat%2B20.19.48%2B%25282%2529.jpeg" />
-		</div>
-	</div>
-
-	<div class="carousel-item">
-		<div class="carousel-box">
-			<div class="title">N Avasthi</div>
-			<div class="num">09</div>
-			<img src="https://imgs.search.brave.com/G5KUKmWqpoBNATwnWbrQ8EVRz-GkuRTKUS4cvNSC2QI/rs:fit:353:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5n/SjBBMm5PenpnTFBm/aU5zdkl6cGhBSGFK/NyZwaWQ9QXBp" />
-		</div>
-	</div>
-	<div class="carousel-item">
-		<div class="carousel-box">
-			<div class="title">R.D Sharma</div>
-			<div class="num">10</div>
-			<img src="https://imgs.search.brave.com/CJ4cu2g_unIG6RL7YpqMp1_qcWJQZggHz94Bryij6MY/rs:fit:344:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5W/SndkT282R05VZnZj/aWNqc2FZSl9BSGFL/TiZwaWQ9QXBp" />
-		</div>
-	</div>
-</div>
-
-<div class="cursor"></div>
-<div class="cursor cursor2"></div>
-<!-- partial -->
-  <script  src="script_book_index.js"></script>
 
 
 </div>
 <!-------------------BOOKS LIST------------------->
 <section class="products">
 
-   <h1 class="title">latest products</h1>
+   <h1 class="title" style="color:white;">latest products</h1>
+   <br>   <br>   <br>
+   <div >
+   <?php  
+         $select_products = mysqli_query($conn, "SELECT * FROM `products` LIMIT 6") or die('query failed');
+         if(mysqli_num_rows($select_products) > 0){
+            while($fetch_products = mysqli_fetch_assoc($select_products)){
+      ?>
+	
+<form action="" method="post" class="box-container" >
+  <div class = "card">
+    <img src="https://images.unsplash.com/photo-1656618020911-1c7a937175fd?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTc1MzQyNTE&ixlib=rb-1.2.1&q=80" alt="">
+    <div class="card-content">
+      <h2>
+         <?php echo $fetch_products['name']; ?>
+      </h2>
 
-   <div class="box-container">
+     
+      <a href="#" class="button">
+     
+        <span class="material-symbols-outlined">
+          
+          <input type="submit   " value="add to cart" name="add_to_cart" class="btn">
 
-      <?php  
+        </span>
+      </a>
+
+    </div>
+  </div>
+  <?php
+         }
+      }else{
+         echo '<p class="empty">no products added yet!</p>';
+      }
+      ?>
+  </form>
+
+      <!-- <?php  
          $select_products = mysqli_query($conn, "SELECT * FROM `products` LIMIT 6") or die('query failed');
          if(mysqli_num_rows($select_products) > 0){
             while($fetch_products = mysqli_fetch_assoc($select_products)){
@@ -246,7 +210,7 @@ if(isset($_POST['add_to_cart'])){
      <form action="" method="post" class="box">
       <img class="image" src="uploaded_img/<?php echo $fetch_products['image']; ?>" alt="">
       <div class="name"><?php echo $fetch_products['name']; ?></div>
-      <div class="price">Rs<?php echo $fetch_products['price']; ?>/-</div>
+   
       <input type="number" min="1" name="product_quantity" value="1" class="qty">
       <input type="hidden" name="product_name" value="<?php echo $fetch_products['name']; ?>">
       <input type="hidden" name="product_price" value="<?php echo $fetch_products['price']; ?>">
@@ -259,7 +223,7 @@ if(isset($_POST['add_to_cart'])){
          echo '<p class="empty">no products added yet!</p>';
       }
       ?>
-   </div>
+   </div> -->
 
    <div class="load-more" style="margin-top: 2rem; text-align:center">
       <a href="shop.php" class="option-btn">load more</a>
@@ -267,21 +231,11 @@ if(isset($_POST['add_to_cart'])){
 
 </section>
 
-<section class="about">
 
-   <div class="flex">
 
-      <div class="image">
-         <img src="images/about-img.jpg" alt="">
-      </div>
 
-      <div class="content">
-         <h3>about us</h3>
-         <p>We are a team of first year engineering studenst with the aim to bring some positive change in the society. This website gives us the key to open a door for the ones who are in need for that one little push to achieve their dream.</p>
-        <a href="about.php" class="btn">read more</a>
-      </div>
 
-   </div>
+      
 
 </section>
 

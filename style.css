@@ -21,19 +21,19 @@ body{
   align-items: center;
   justify-content: center;
 }
-.container{
+.container1{
   width: 85%;
   background: #fff;
   border-radius: 6px;
-  padding: 20px 60px 30px 40px;
+ 
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
-.container .content{
+.container1 .content{
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.container .content .left-side{
+.container1 .content .left-side{
   width: 25%;
   height: 100%;
   display: flex;
