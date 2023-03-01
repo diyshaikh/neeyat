@@ -11,7 +11,7 @@ $sql = "SELECT *
               WHERE id = (SELECT MAX(id)
                           FROM mentee))";
 
-$result = mysqli_query($connect, $sql);
+$result = mysqli_query($connect,$sql);
 
 
 ?>
@@ -45,72 +45,95 @@ $result = mysqli_query($connect, $sql);
      border:2px;
      border-radius:30px
 }
-.div0{
-  width: 100%;
-  height: 70px;
-  background-color: #002244 ;
-  position: fixed;
-}
-.divx1{
+.container1
+  {
+    max-width: 80rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+    position: relative;
+  
+   
+  }
+  nav
+  {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 50;
+    z-index: 50;
+    
+  }
+  nav .container1
+  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
 
-        align-content: justify;
-        position:fixed;
-         left :50%;
-        top:30px;
-        
-      }
-li{
-        display: inline;
-        
+  }
+  .logo
+  {
+    max-width: 250px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .links {
+    position: relative;
+    left:5%;
+  }
+  
+  .active1 {
+    position: absolute;
+    left: 25%;
+  }
 
-      }
-.li1 {
-       
-        font-size: 25px;
-        font-family: Arial, Helvetica, sans-serif;
-        color: #f7f7f8;
-      }
-.li1 a{
-        
-        text-decoration: none;
-        color: #f5f9fd;
-      }
-      
-      /* #002244 rgb(215, 221, 221) */
-.li1 a:hover
-      {
-        color: #002244;
-        transition: 0.5s;
-       background-color:rgb(215, 221, 221);
-       padding: 10px 10px 10px 10px ;
-      }
-.li2{
-        font-size: 25px;
-        font-family: Arial, Helvetica, sans-serif;
-      
-      }
-.li2 a{
-    text-decoration: none;
-        background: #002244;
-        border-radius: 30px;
-        transition: 0.5s;
-        border-width: 10px;
-        border: 10px;
-        margin: 10px;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 2px;
-        padding-bottom:2px ;
-        top: 0;
-        left: ;
-        color: rgb(215, 221, 221);
-      }
-.li2 a:hover{
-        font-size: 30px;
-        transition: 0.5s;
-        background-color: #e4139e;
-        text-decoration: none;
-      }
+  .links ul
+  {
+    display: flex;
+  }
+  .links a
+  {
+    display: inline-block;
+    padding: 0.7rem 1.2rem;
+    margin-right: 0.6rem;
+    color: #fbfcfc;
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1;
+    border-radius: 1.5rem;
+    transition: 0.3s;
+  }
+  
+  .links a
+  {
+    display: inline-block;
+    padding: 0.7rem 1.2rem;
+    margin-right: 0.6rem;
+    color: #07557d;
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1;
+    border-radius: 1.5rem;
+    transition: 0.3s;
+    background: #ffffff;
+  }
+  .links a.active1,
+  .links a:hover
+  {
+    color: #0b0235;
+    font-size: 1.25rem;
+  }
+
+  .links a.active,
+  .links a:hover
+  {
+    color: #0b0235;
+    font-size: 1.25rem;
+
+  }
 
 </style>
            <title>Matchings</title>  
@@ -118,25 +141,38 @@ li{
            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
       </head>  
+                
       <body class="body">  
-           <br />  <div class="div0">
-          <div class="divx1">
-              <ul>
-                  <li class="li1"><a href="index.html">Home<a></li>
-                  &emsp;
-                  <li class="li1"><a href="about.html">About<a></a></li>
-                  &emsp;
-                  <li class="li1"><a href="about.html">Vision<a></a></li>
-                  &emsp;
-                  <li class="li1"><a href="contact_us.html">Contact Us<a></a></li>
-                  &emsp;
-                  <li class="li2"><a 	href="Untitled-4.html">Assistance</a></li>
-                  </ul>
+      <nav>
+    <div class="container1">
+      <div class="logo" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 50px;     color: #f6f8f9;
+      ">
+        <b>NEEYAT</b>
+      </div>
+      <div class="links">
+        <ul>
+          <li><a href="donate.html" >Donate</a></li>
+          <li><a href="index.html" >Home</a></li>
+         
+          
 
-          </div>
-          <div>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact_us.html">Contact Us</a></li>
+          <li><a href="login.php">Books</a></li>
+           <li class="Assistance"> <a href="Untitled-4.html">Assistance</a></li>
+           <li><a href="bot.php"  >Chat</a></li>
+        </ul>
+      </div>
+      <div class="hamburger-menu">
+        <div class="bar"></div>
+      </div>
+    </div>
+  </nav>
+          
+
+           <br /> 
            <div class="container" style="width:500px;">  
-                <h1 align="">People We have Chosen</h1><br />                 
+                <h1      >People We have Chosen</h1><br />                 
                 <div class="table-responsive">  
                      <table class="table table-striped">  
                           <tr>  
