@@ -6,6 +6,13 @@
   box-sizing: border-box;
   font-family: "Poppins" , sans-serif;
 }
+#aboutheader {
+  float: left;
+  padding: 10px;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  }
 body{
   min-height: 100vh;
   width: 100%;
@@ -233,10 +240,6 @@ ul {
         margin-inline-end: 0px;
         padding-inline-start: 40px;
     }
-    #aboutheader {
-      float: left;
-      padding: 10px;
-  }
 
 
 
