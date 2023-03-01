@@ -1,24 +1,32 @@
 <?php  
  $connect = mysqli_connect("localhost", "root", "", "neeyat");  
 session_start();
-
-    
-//$sql ="SELECT * FROM mentee WHERE mentee.aoi = '$aoi'";
-$sql = "SELECT *
- FROM mentor
- WHERE aoi = (SELECT aoi
-              FROM mentee
-              WHERE id = (SELECT MAX(id)
-                          FROM mentee))";
-
-$result = mysqli_query($connect,$sql);
+<<<<<<< HEAD
+if (isset($_GET['aoi'])){
+$aoi= $_SESSION['aoi'];
+$Pincode= $_SESSION['Pincode'];
+}
 
 
-?>
+//$sql = "SELECT * FROM mentee where mentee.aoi = '$aoi'" ;
+ $sql = " SELECT * FROM mentee  JOIN mentor ON mentor.aoi = mentee.aoi AND mentor.Pincode=mentee.Pincode"; 
+=======
+//  if (isset($_GET['aoi'])){
+//  $aoi= $_SESSION['aoi'];
+//  $Pincode= $_SESSION['Pincode'];
+//  }
+ $sql = " SELECT *
+ FROM mentee
+ JOIN mentor ON mentor.aoi = mentee.aoi AND mentor.Pincode = mentee.Pincode
+ ORDER BY mentee.id DESC
+ LIMIT 1;"; 
+>>>>>>> 7a42e639fe664fe6ab6ac26c5f408439602d90ef
+ $result = mysqli_query($connect, $sql);
+ ?>
  <!DOCTYPE html>  
  <html>  
 
-      <head> 
+      <head>  
            <title>Matchings</title>  
            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
@@ -45,95 +53,72 @@ $result = mysqli_query($connect,$sql);
      border:2px;
      border-radius:30px
 }
-.container1
-  {
-    max-width: 80rem;
-    padding: 0 2rem;
-    margin: 0 auto;
-    position: relative;
-  
-   
-  }
-  nav
-  {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 50;
-    z-index: 50;
-    
-  }
-  nav .container1
-  {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 6rem;
+.div0{
+  width: 100%;
+  height: 70px;
+  background-color: #002244 ;
+  position: fixed;
+}
+.divx1{
 
-  }
-  .logo
-  {
-    max-width: 250px;
-    display: flex;
-    align-items: center;
-    position: relative;
-  }
-  .links {
-    position: relative;
-    left:5%;
-  }
-  
-  .active1 {
-    position: absolute;
-    left: 25%;
-  }
+        align-content: justify;
+        position:fixed;
+         left :50%;
+        top:30px;
+        
+      }
+li{
+        display: inline;
+        
 
-  .links ul
-  {
-    display: flex;
-  }
-  .links a
-  {
-    display: inline-block;
-    padding: 0.7rem 1.2rem;
-    margin-right: 0.6rem;
-    color: #fbfcfc;
-    font-size: 1.05rem;
-    text-transform: uppercase;
-    font-weight: 500;
-    line-height: 1;
-    border-radius: 1.5rem;
-    transition: 0.3s;
-  }
-  
-  .links a
-  {
-    display: inline-block;
-    padding: 0.7rem 1.2rem;
-    margin-right: 0.6rem;
-    color: #07557d;
-    font-size: 1.05rem;
-    text-transform: uppercase;
-    font-weight: 500;
-    line-height: 1;
-    border-radius: 1.5rem;
-    transition: 0.3s;
-    background: #ffffff;
-  }
-  .links a.active1,
-  .links a:hover
-  {
-    color: #0b0235;
-    font-size: 1.25rem;
-  }
-
-  .links a.active,
-  .links a:hover
-  {
-    color: #0b0235;
-    font-size: 1.25rem;
-
-  }
+      }
+.li1 {
+       
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #f7f7f8;
+      }
+.li1 a{
+        
+        text-decoration: none;
+        color: #f5f9fd;
+      }
+      
+      /* #002244 rgb(215, 221, 221) */
+.li1 a:hover
+      {
+        color: #002244;
+        transition: 0.5s;
+       background-color:rgb(215, 221, 221);
+       padding: 10px 10px 10px 10px ;
+      }
+.li2{
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+      
+      }
+.li2 a{
+    text-decoration: none;
+        background: #002244;
+        border-radius: 30px;
+        transition: 0.5s;
+        border-width: 10px;
+        border: 10px;
+        margin: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 2px;
+        padding-bottom:2px ;
+        top: 0;
+        left: ;
+        color: rgb(215, 221, 221);
+      }
+.li2 a:hover{
+        font-size: 30px;
+        transition: 0.5s;
+        background-color: #e4139e;
+        text-decoration: none;
+      }
 
 </style>
            <title>Matchings</title>  
@@ -141,76 +126,53 @@ $result = mysqli_query($connect,$sql);
            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
       </head>  
-                
       <body class="body">  
-      <nav>
-    <div class="container1">
-      <div class="logo" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 50px;     color: #f6f8f9;
-      ">
-        <b>NEEYAT</b>
-      </div>
-      <div class="links">
-        <ul>
-          <li><a href="donate.html" >Donate</a></li>
-          <li><a href="index.html" >Home</a></li>
-         
-          
+           <br />  <div class="div0">
+          <div class="divx1">
+              <ul>
+                  <li class="li1"><a href="index.html">Home<a></li>
+                  &emsp;
+                  <li class="li1"><a href="about.html">About<a></a></li>
+                  &emsp;
+                  <li class="li1"><a href="about.html">Vision<a></a></li>
+                  &emsp;
+                  <li class="li1"><a href="contact_us.html">Contact Us<a></a></li>
+                  &emsp;
+                  <li class="li2"><a 	href="Untitled-4.html">Assistance</a></li>
+                  </ul>
 
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact_us.html">Contact Us</a></li>
-          <li><a href="login.php">Books</a></li>
-           <li class="Assistance"> <a href="Untitled-4.html">Assistance</a></li>
-           <li><a href="bot.php"  >Chat</a></li>
-        </ul>
-      </div>
-      <div class="hamburger-menu">
-        <div class="bar"></div>
-      </div>
-    </div>
-  </nav>
-          
-
-           <br /> 
+          </div>
+          <div>
            <div class="container" style="width:500px;">  
-                <h1      >People We have Chosen</h1><br />                 
+                <h1 align="">People We have Chosen</h1><br />                 
                 <div class="table-responsive">  
                      <table class="table table-striped">  
                           <tr>  
                                <th>Name</th>  
-                               
+                               <th>Area</th>  
                                <th>Email id</th>
                                <th>Field of Interest </th>  
                           </tr>  
                           <?php  
-  //if (mysqli_num_rows($result) > 0) 
-  //{  
-       //while($row = mysqli_fetch_array($result))
-           //$row = $result->fetch_assoc())  
-      // {  
- // 
- if (mysqli_num_rows($result) > 0) 
- {  
-      while($row = mysqli_fetch_array($result))
-          //$row = $result->fetch_assoc())  
-      {  
- ?>  
+                          if(mysqli_num_rows($result) > 0)  
+                          {  
+                               while($row = mysqli_fetch_array($result))  
+                               {  
+                          ?>  
 
- <tr>  
-      <td><?php echo $row["name"];?></td>  
-       
-      <td><?php echo $row["email"];?></td>  
-      <td><?php echo $row["aoi"]; ?></td>  
- </tr>  
- <?php  
-      }  
- }
- 
- 
-
- ?>  
-</table>  
-</div>  
-</div>  
-<br />  
-</body>  
-</html>
+                          <tr>  
+                               <td><?php echo $row["name"];?></td>  
+                               <td><?php echo $row["local"];?></td>  
+                               <td><?php echo $row["email"];?></td>  
+                               <td><?php echo $row["aoi"]; ?></td>  
+                          </tr>  
+                          <?php  
+                               }  
+                          }  
+                          ?>  
+                     </table>  
+                </div>  
+           </div>  
+           <br />  
+      </body>  
+ </html> what is the problem
