@@ -65,21 +65,6 @@ hr{
  
 
 .divx1{
-<<<<<<< HEAD
-    align-content: justify;
-    position: relative;
-    left: 120% ;
-    width: 630px;
-    top: -80px;
-    
-   
-    background-color: #002244;
-    padding: 10px;
-      }
-      li{
-        display: inline;
-        
-=======
   align-content: justify;
   position: relative;
   left: 120% ;
@@ -93,7 +78,6 @@ hr{
 li{
       display: inline;
       
->>>>>>> 3c4df96658f28dd05630323648824f0b08f108b6
 
     }
 .li1 {
@@ -196,8 +180,6 @@ li{
 }
 
 
-<<<<<<< HEAD
-=======
 .intro_bg{
 margin-left: 10%;
 margin-right: 10%;
@@ -250,7 +232,6 @@ background-color: #dff9f9;
 }
 
 
->>>>>>> 3c4df96658f28dd05630323648824f0b08f108b6
 .ag-format-container {
   width: 1142px;
   margin: 0 auto;
