@@ -163,11 +163,11 @@ if(isset($message)){
   <div class="top"></div>
   <div class="bottom"></div>
   <div class="center">
-    <h2>Please Sign In</h2>
+    <h1>Please Sign In</h1>
     <input type="email" name="email" placeholder="enter your email" required class="box">
     <input type="password" name="password" placeholder="enter your password" required class="box">
     <input type="submit" name="submit" value="login now" class="btn">
-    <p>Don't have an account? <a href="register.php"><b>register now</b></a></p> 
+    <p style="font-size: 15px;">Don't have an account? <a href="register.php"><b>register now</b></a></p> 
 
     <h2>&nbsp;</h2>
   </div>

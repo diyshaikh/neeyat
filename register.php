@@ -169,7 +169,7 @@ if(isset($message)){
   <div class="top"></div>
   <div class="bottom"></div>
   <div class="center">
-  <h3>register now</h3>
+  <h1>register now</h1>
   <input type="text" name="name" placeholder="enter your name" required class="box">
   <input type="email" name="email" placeholder="enter your email" required class="box">
   <input type="password" name="password" placeholder="enter your password" required class="box">
@@ -179,7 +179,7 @@ if(isset($message)){
          <option value="admin"  class="box">admin</option>
       </select>
       <input type="submit" name="submit" value="register now" class="btn">
-      <p>already have an account? <a href="login.php">login now</a></p>
+      <p style="font-size: 15px;">already have an account? <a href="login.php">login now</a></p>
 
     <h2>&nbsp;</h2>
   </div>
