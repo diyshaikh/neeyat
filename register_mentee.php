@@ -3,12 +3,7 @@
 include ("db_connect.php") ;
 session_start();
 
-     $name = $_POST['name'];
-     $gender = $_POST['gender'];
-     $age = $_POST['age'];
-     $email = $_POST['email'];
-     $aoi = $_POST['aoi'];
-     $Pincode = $_POST['Pincode'];
+     
      //if(isset($_SESSION['aoi'])){
      // echo 'Hello';
   //} 

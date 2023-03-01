@@ -1,4 +1,4 @@
-<?php
+   <?php
 if(isset($message)){
    foreach($message as $message){
       echo '
@@ -27,15 +27,14 @@ if(isset($message)){
 
    <div class="header-2">
       <div class="flex">
-         <a href="index.html" class="logo">Neeyat</a>
 
          <nav class="navbar">
          <a href="index.html" >Neeyat</a>
 
             <a href="home.php">Home</a>
-            <a href="about.php">About</a>
+        
             <a href="shop.php">Shop</a>
-            <a href="contact.php">Contact</a>
+            <a href="contact_us.html">Contact</a>
             <a href="orders.php">Orders</a>
          </nav>
 

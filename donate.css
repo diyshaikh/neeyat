@@ -467,20 +467,12 @@ footer p
     opacity:80%;
     text-align: center;
     margin: 0% 20% 0% 20%;
-    padding-top:10%;
-<<<<<<< HEAD
-    padding-bottom: 10%;
-=======
-    padding-bottom: 3%;
->>>>>>> 3dc400830fbae148707759adde0469bd8a034bc4
+    padding-top:6%;
+    
 }
 .donate .donate_container h1
 {
-<<<<<<< HEAD
     color: rgb(106, 161, 224);
-=======
-    color: rgb(41, 164, 200);
->>>>>>> c670804afd19f6ae73a2a8021ca6ab57083d5dc8
     line-height: 100px;
 }
 .donate .donate_container p
