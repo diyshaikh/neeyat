@@ -182,11 +182,18 @@ $result = mysqli_query($connect,$sql);
                                <th>Field of Interest </th>  
                           </tr>  
                           <?php  
-                          if(mysqli_num_rows($result) > 0)  
-                          {  
-                               while($row = mysqli_fetch_array($result))  
-                               {  
-                          ?>  
+  //if (mysqli_num_rows($result) > 0) 
+  //{  
+       //while($row = mysqli_fetch_array($result))
+           //$row = $result->fetch_assoc())  
+      // {  
+ // 
+ if (mysqli_num_rows($result) > 0) 
+ {  
+      while($row = mysqli_fetch_array($result))
+          //$row = $result->fetch_assoc())  
+      {  
+ ?>  
 
  <tr>  
       <td><?php echo $row["name"];?></td>  
