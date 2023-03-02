@@ -45,7 +45,25 @@ if(isset($_POST['add_to_cart'])){
 
    <!-- custom css file link  -->
    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Roboto'><link rel="stylesheet" href="style_book_index.css">
+<link rel="stylesheet" href="style_book_card.css">
+<!-- partial:index.partial.html -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
+<style>
+.box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+   gap:1.5rem;
+   max-width: 1200px;
+   margin:0 auto;
+   align-items: flex-start;
+}
+</style>
 </head>
 <body>
    
@@ -141,13 +159,50 @@ if(isset($_POST['add_to_cart'])){
 
 
 
+
+
+</div>
+<!-------------------BOOKS LIST------------------->
 <section class="products">
 
-   <h1 class="title">latest products</h1>
+   <h1 class="title" style="color:white;">latest products</h1>
+   <br>   <br>   <br>
+   <div >
+   <?php  
+         $select_products = mysqli_query($conn, "SELECT * FROM `products` LIMIT 6") or die('query failed');
+         if(mysqli_num_rows($select_products) > 0){
+            while($fetch_products = mysqli_fetch_assoc($select_products)){
+      ?>
+	
+<form action="" method="post" class="box-container" >
+  <div class = "card">
+    <img src="https://images.unsplash.com/photo-1656618020911-1c7a937175fd?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTc1MzQyNTE&ixlib=rb-1.2.1&q=80" alt="">
+    <div class="card-content">
+      <h2>
+         <?php echo $fetch_products['name']; ?>
+      </h2>
 
-   <div class="box-container">
+     
+      <a href="#" class="button">
+     
+        <span class="material-symbols-outlined">
+          
+          <input type="submit   " value="add to cart" name="add_to_cart" class="btn">
 
-      <?php  
+        </span>
+      </a>
+
+    </div>
+  </div>
+  <?php
+         }
+      }else{
+         echo '<p class="empty">no products added yet!</p>';
+      }
+      ?>
+  </form>
+
+      <!-- <?php  
          $select_products = mysqli_query($conn, "SELECT * FROM `products` LIMIT 6") or die('query failed');
          if(mysqli_num_rows($select_products) > 0){
             while($fetch_products = mysqli_fetch_assoc($select_products)){
@@ -155,7 +210,7 @@ if(isset($_POST['add_to_cart'])){
      <form action="" method="post" class="box">
       <img class="image" src="uploaded_img/<?php echo $fetch_products['image']; ?>" alt="">
       <div class="name"><?php echo $fetch_products['name']; ?></div>
-      <div class="price">Rs<?php echo $fetch_products['price']; ?>/-</div>
+   
       <input type="number" min="1" name="product_quantity" value="1" class="qty">
       <input type="hidden" name="product_name" value="<?php echo $fetch_products['name']; ?>">
       <input type="hidden" name="product_price" value="<?php echo $fetch_products['price']; ?>">
@@ -168,7 +223,7 @@ if(isset($_POST['add_to_cart'])){
          echo '<p class="empty">no products added yet!</p>';
       }
       ?>
-   </div>
+   </div> -->
 
    <div class="load-more" style="margin-top: 2rem; text-align:center">
       <a href="shop.php" class="option-btn">load more</a>
@@ -176,21 +231,11 @@ if(isset($_POST['add_to_cart'])){
 
 </section>
 
-<section class="about">
 
-   <div class="flex">
 
-      <div class="image">
-         <img src="images/about-img.jpg" alt="">
-      </div>
 
-      <div class="content">
-         <h3>about us</h3>
-         <p>We are a team of first year engineering studenst with the aim to bring some positive change in the society. This website gives us the key to open a door for the ones who are in need for that one little push to achieve their dream.</p>
-        <a href="about.php" class="btn">read more</a>
-      </div>
 
-   </div>
+      
 
 </section>
 

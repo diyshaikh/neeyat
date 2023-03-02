@@ -37,13 +37,31 @@ if(isset($_POST['add_to_cart'])){
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>shop</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Roboto'><link rel="stylesheet" href="style_book_index.css">
+<link rel="stylesheet" href="style_book_card.css">
 
    <!-- custom css file link  -->
    <link rel="stylesheet" href="css/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
+<style>
+.box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+   gap:1.5rem;
+   max-width: 1200px;
+   margin:0 auto;
+   align-items: flex-start;
+}
+</style>
 </head>
 <body>
    
@@ -56,6 +74,70 @@ if(isset($_POST['add_to_cart'])){
 
 <section class="products">
 
+   <h1 class="title" style="color:white;">latest products</h1>
+   <br>   <br>   <br>
+   <div >
+   <?php  
+         $select_products = mysqli_query($conn, "SELECT * FROM `products` LIMIT 6") or die('query failed');
+         if(mysqli_num_rows($select_products) > 0){
+            while($fetch_products = mysqli_fetch_assoc($select_products)){
+      ?>
+	
+<form action="" method="post" class="box-container" >
+  <div class = "card">
+    <img src="https://images.unsplash.com/photo-1656618020911-1c7a937175fd?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTc1MzQyNTE&ixlib=rb-1.2.1&q=80" alt="">
+    <div class="card-content">
+      <h2>
+         <?php echo $fetch_products['name']; ?>
+      </h2>
+
+     
+      <a href="#" class="button">
+     
+        <span class="material-symbols-outlined">
+          
+          <input type="submit   " value="add to cart" name="add_to_cart" class="btn">
+
+        </span>
+      </a>
+
+    </div>
+  </div>
+  <?php
+         }
+      }else{
+         echo '<p class="empty">no products added yet!</p>';
+      }
+      ?>
+  </form>
+
+
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>shop</title>
+
+    font awesome cdn link  -->
+   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
+
+   <!-- custom css file link  -->
+   <!-- <link rel="stylesheet" href="css/style.css"> -->
+
+<!-- </head>
+<body>
+   
+<?php include 'header.php'; ?>
+
+<div class="heading">
+   <h3>our shop</h3>
+   <p> <a href="home.php">home</a> / shop </p>
+</div> -->
+
+<!-- <section class="products">
+
    <h1 class="title">latest products</h1>
 
    <div class="box-container">
@@ -64,8 +146,8 @@ if(isset($_POST['add_to_cart'])){
          $select_products = mysqli_query($conn, "SELECT * FROM `products`") or die('query failed');
          if(mysqli_num_rows($select_products) > 0){
             while($fetch_products = mysqli_fetch_assoc($select_products)){
-      ?>
-     <form action="" method="post" class="box">
+      ?> -->
+     <!-- <form action="" method="post" class="box">
       <img class="image" src="uploaded_img/<?php echo $fetch_products['image']; ?>" alt="">
       <div class="name"><?php echo $fetch_products['name']; ?></div>
       <div class="price">Rs<?php echo $fetch_products['price']; ?>/-</div>
@@ -75,7 +157,7 @@ if(isset($_POST['add_to_cart'])){
       <input type="hidden" name="product_image" value="<?php echo $fetch_products['image']; ?>">
       <input type="submit" value="add to cart" name="add_to_cart" class="btn">
      </form>
-      <?php
+      <?php 
          }
       }else{
          echo '<p class="empty">no products added yet!</p>';
@@ -83,7 +165,9 @@ if(isset($_POST['add_to_cart'])){
       ?>
    </div>
 
-</section>
+</section> -->
+
+   
 
 
 
