@@ -121,12 +121,12 @@ section{
 .btn:hover,
 .option-btn:hover,
 .delete-btn:hover{
-   background-color: var(--black);
+   background-color: var(--white);
 }
 
 .white-btn,
 .btn{
-   background-color: var(--purple);
+   background-color: var(--white);
 }
 
 .option-btn{
@@ -149,7 +149,7 @@ section{
    align-items: center;
    justify-content: center;
    gap:1rem;
-   background: url(../images/backg.png);
+  
    background-size: cover;
    background-position: center;
    text-align: center;
@@ -219,14 +219,14 @@ section{
 }
 
 .form-container form .box{
-   width: 100%;
-   border-radius: .5rem;
-   background-color: var(--light-bg);
-   padding:1.2rem 1.4rem;
-   font-size: 1.8rem;
-   color:var(--black);
-   border:var(--border);
-   margin:1rem 0;
+   width: 24rem;
+  height: 36rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #f0f0f0;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
 }
 
 .form-container form p{
@@ -411,17 +411,17 @@ section{
    position: relative;
 }
 
-.products .box-container .box .image{
+.products .box-container  .image{
    height: 30rem;
 }
 
-.products .box-container .box .name{
+.products .box-container  .name{
    padding:1rem 0;
    font-size: 2rem;
    color:var(--black);
 }
 
-.products .box-container .box .qty{
+.products .box-container  .qty{
    width: 100%;
    padding:1.2rem 1.4rem;
    border-radius: .5rem;
@@ -430,7 +430,7 @@ section{
    font-size: 2rem;
 }
 
-.products .box-container .box .price{
+.products .box-container .price{
    position: absolute;
    top:1rem; left:1rem;
    border-radius: .5rem;
@@ -890,7 +890,7 @@ section{
  
 
 .footer{
-   background-color: var(--light-bg);
+   background-color: ;
 }
 
 .footer .box-container{
